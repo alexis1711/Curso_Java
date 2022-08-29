@@ -1,0 +1,13 @@
+org\acornejo\webapp\jaxrs\services\ProveedorServiceImpl.class
+org\acornejo\webapp\jaxrs\models\Cliente.class
+org\acornejo\webapp\jaxrs\repositories\ClienteRepository.class
+org\acornejo\webapp\jaxrs\services\ClienteServiceImpl.class
+org\acornejo\webapp\jaxrs\controllers\ProveedorRestController.class
+org\acornejo\webapp\jaxrs\repositories\ProveedorRepository.class
+org\acornejo\webapp\jaxrs\models\Proveedor.class
+org\acornejo\webapp\jaxrs\services\ClienteService.class
+org\acornejo\webapp\jaxrs\ProducerEntityManager.class
+org\acornejo\webapp\jaxrs\controllers\ClienteRestController.class
+org\acornejo\webapp\jaxrs\services\ProveedorService.class
+org\acornejo\webapp\jaxrs\repositories\ClienteRepositoryImpl.class
+org\acornejo\webapp\jaxrs\repositories\ProveedorRepositoryImpl.class
