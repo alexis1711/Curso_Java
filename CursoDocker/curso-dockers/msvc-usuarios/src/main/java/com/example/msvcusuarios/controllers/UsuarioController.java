@@ -1,9 +1,8 @@
 package com.example.msvcusuarios.controllers;
 
-import com.example.msvcusuarios.model.entity.Usuario;
+import com.example.msvcusuarios.models.entity.Usuario;
 import com.example.msvcusuarios.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
@@ -73,6 +72,11 @@ public class UsuarioController {
             return ResponseEntity.noContent().build();
         }
         return ResponseEntity.notFound().build();
+    }
+
+    @GetMapping("/usuarios-por-curso")
+    public ResponseEntity<?> obtenerAlumnosPorCurso(@RequestParam List<Long> ids){
+        return ResponseEntity.ok(service.listarPorIds(ids));
     }
 
     private ResponseEntity<Map<String, String>> validar(BindingResult result) {

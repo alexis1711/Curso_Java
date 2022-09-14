@@ -1,6 +1,6 @@
 package com.example.msvcusuarios.services;
 
-import com.example.msvcusuarios.model.entity.Usuario;
+import com.example.msvcusuarios.models.entity.Usuario;
 import com.example.msvcusuarios.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,6 +37,12 @@ public class UsuarioServiceImpl implements UsuarioService{
     @Transactional
     public void eliminar(Long id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Usuario> listarPorIds(Iterable<Long> ids) {
+        return (List<Usuario>) repository.findAllById(ids);
     }
 
     @Override

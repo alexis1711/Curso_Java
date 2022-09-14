@@ -1,6 +1,6 @@
 package com.example.msvcusuarios.repositories;
 
-import com.example.msvcusuarios.model.entity.Usuario;
+import com.example.msvcusuarios.models.entity.Usuario;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
